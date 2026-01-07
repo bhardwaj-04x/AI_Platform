@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini ChatGPT</title>
+</head>
+<body>
+
+<h2>Mini ChatGPT</h2>
+
+<form method="POST">
+    <input type="text" name="message" placeholder="Type your message..." required>
+    <button type="submit">Send</button>
+</form>
+
+<hr>
+
+{% if user_msg %}
+<p><b>You:</b> {{ user_msg }}</p>
+<p><b>Bot:</b> {{ bot_reply }}</p>
+{% endif %}
+
+</body>
+</html>
